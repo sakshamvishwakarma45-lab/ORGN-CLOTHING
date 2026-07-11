@@ -137,7 +137,7 @@ export async function getInstagramSettings(): Promise<InstagramSettings> {
 
 export async function getAboutSettings(): Promise<AboutSettings> {
   return getSiteSetting<AboutSettings>('about', {
-    heading: 'Built from the ground up.',
-    body: 'ORGN is a modern minimal streetwear label designed in India.',
+    heading: 'Built from the root up.',
+    body: 'ORGN is short for origin — the root every one of us shares before region, language, or city ever enters the picture. Same origin, bigger map. Every piece is designed in-house, cut in heavyweight fabric, and produced in small batches so quality never gets diluted for volume. No influencer campaigns, no filler collections. Just clothing built to be worn, not just bought.',
   });
 }

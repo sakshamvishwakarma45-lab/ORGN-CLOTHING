@@ -195,8 +195,8 @@ insert into site_settings (key, value) values
     )
   )),
   ('about', jsonb_build_object(
-    'heading', 'Built from the ground up.',
-    'body', 'ORGN started as a rejection of disposable fashion — pieces that fade, fit wrong, and fall apart by the third wash. Every drop is designed in-house, cut in heavyweight fabric, and produced in small batches so quality never gets diluted for volume. No influencer campaigns, no filler collections. Just clothing built to be worn, not just bought.'
+    'heading', 'Built from the root up.',
+    'body', 'ORGN is short for origin — the root every one of us shares before region, language, or city ever enters the picture. Same origin, bigger map. Every piece is designed in-house, cut in heavyweight fabric, and produced in small batches so quality never gets diluted for volume. No influencer campaigns, no filler collections. Just clothing built to be worn, not just bought.'
   ))
 on conflict (key) do update set value = excluded.value;
 

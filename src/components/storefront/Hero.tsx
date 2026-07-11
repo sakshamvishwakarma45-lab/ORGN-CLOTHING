@@ -39,8 +39,7 @@ export function Hero({ settings }: { settings: HeroSettings }) {
     <section
       ref={containerRef}
       onMouseMove={handleMouseMove}
-      className="relative flex min-h-[640px] w-full flex-col items-center justify-center overflow-hidden bg-beige"
-      style={{ height: '100svh' }}
+      className="relative flex min-h-[640px] w-full flex-col items-center justify-center overflow-hidden bg-beige py-28 sm:py-36"
     >
       <div className="grain-overlay" />
 
@@ -99,25 +98,6 @@ export function Hero({ settings }: { settings: HeroSettings }) {
           <MagneticButton href={settings.secondary_cta_href} variant="ghost">
             {settings.secondary_cta_label}
           </MagneticButton>
-        </motion.div>
-
-        {/* Stats strip */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.85, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-12 flex items-center gap-6 sm:gap-10"
-        >
-          {[
-            { num: '500+', label: 'Orders' },
-            { num: '4.9★', label: 'Rating' },
-            { num: '50+', label: 'Designs' },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <p className="font-display text-lg font-black text-ink sm:text-xl">{stat.num}</p>
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-ink/40">{stat.label}</p>
-            </div>
-          ))}
         </motion.div>
       </div>
 
