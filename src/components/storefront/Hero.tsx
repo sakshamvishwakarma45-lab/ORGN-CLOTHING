@@ -39,7 +39,7 @@ export function Hero({ settings }: { settings: HeroSettings }) {
     <section
       ref={containerRef}
       onMouseMove={handleMouseMove}
-      className="relative flex min-h-[640px] w-full flex-col items-center justify-center overflow-hidden bg-beige py-28 sm:py-36"
+      className="relative flex min-h-[560px] w-full flex-col items-center justify-center overflow-hidden bg-beige py-14 sm:min-h-[640px] sm:py-24 md:py-32"
     >
       <div className="grain-overlay" />
 
@@ -107,7 +107,7 @@ export function Hero({ settings }: { settings: HeroSettings }) {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-        className="pointer-events-none absolute bottom-0 right-[2%] hidden w-[260px] md:block lg:w-[340px]"
+        className="pointer-events-none absolute bottom-16 right-[6%] w-[80px] sm:bottom-0 sm:right-[3%] sm:w-[160px] md:right-[2%] md:w-[260px] lg:w-[340px]"
       >
         <div className="animate-float">
           <div className="relative aspect-[4/5] w-full">
